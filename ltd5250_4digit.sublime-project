@@ -1,0 +1,92 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+		}
+	],
+	"settings":
+	{
+		"cmake":
+		{
+		   "build_folder": "$folder/build",
+		},
+	},
+	"build_systems":
+	[
+		{
+			"file_regex": "(.+[^:]):(\\d+):(\\d+): (?:fatal )?((?:error|warning): .+)$",
+			"name": "ltd5250_4digit (Linux)",
+			"shell_cmd": "make -j4",
+			"syntax": "Packages/CMakeBuilder/Syntax/Make.sublime-syntax",
+			"variants":
+			[
+				{
+					"name": "clean",
+					"shell_cmd": "make -j4 clean",
+				},
+				{
+					"name": "rebuild_cache",
+					"shell_cmd": "make -j4 rebuild_cache",
+				},
+				{
+					"name": "disassemble_lt5250_4digit",
+					"shell_cmd": "make -j4 disassemble_lt5250_4digit",
+				},
+				{
+					"name": "get_calibration",
+					"shell_cmd": "make -j4 get_calibration",
+				},
+				{
+					"name": "get_fuses",
+					"shell_cmd": "make -j4 get_fuses",
+				},
+				{
+					"name": "get_size",
+					"shell_cmd": "make -j4 get_size",
+				},
+				{
+					"name": "get_status",
+					"shell_cmd": "make -j4 get_status",
+				},
+				{
+					"name": "lt5250_4digit",
+					"shell_cmd": "make -j4 lt5250_4digit",
+				},
+				{
+					"name": "set_calibration",
+					"shell_cmd": "make -j4 set_calibration",
+				},
+				{
+					"name": "set_fuses",
+					"shell_cmd": "make -j4 set_fuses",
+				},
+				{
+					"name": "upload_eeprom",
+					"shell_cmd": "make -j4 upload_eeprom",
+				},
+				{
+					"name": "upload_lt5250_4digit",
+					"shell_cmd": "make -j4 upload_lt5250_4digit",
+				},
+				{
+					"name": "lt5250_4digit-atmega168.elf",
+					"shell_cmd": "make -j4 lt5250_4digit-atmega168.elf",
+				},
+				{
+					"name": "main.obj",
+					"shell_cmd": "make -j4 main.obj",
+				},
+				{
+					"name": "main.i",
+					"shell_cmd": "make -j4 main.i",
+				},
+				{
+					"name": "main.s",
+					"shell_cmd": "make -j4 main.s",
+				}
+			],
+			"working_dir": "$folder/build",
+		}
+	],
+}

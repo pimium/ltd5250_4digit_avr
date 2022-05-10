@@ -1,0 +1,10 @@
+/.idea/*
+**.o
+**.i
+**.s
+**.out
+**.lst
+**.lss
+**.map
+/cmake-build-*
+/build
